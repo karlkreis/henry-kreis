@@ -501,6 +501,298 @@ blockquote {
   color: var(--muted);
 }
 
+.collection-group {
+  color: inherit;
+  text-decoration: none;
+}
+
+.collection-group__image {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 4 / 5;
+  padding: 2rem;
+  background:
+    radial-gradient(circle, rgba(255, 255, 255, 0.8), transparent 62%),
+    var(--paper-deep);
+  transition: background 180ms ease;
+}
+
+.collection-group__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 180ms ease;
+}
+
+.collection-group:hover .collection-group__image {
+  background-color: var(--white);
+}
+
+.collection-group:hover .collection-group__image img {
+  transform: scale(1.025);
+}
+
+.collection-group h3 {
+  margin: 1.25rem 0 0.4rem;
+  font-size: 1.6rem;
+}
+
+.collection-group p:not(.eyebrow) {
+  margin: 0 0 1.25rem;
+  color: var(--muted);
+}
+
+.collection-group .eyebrow {
+  margin-top: 1.25rem;
+}
+
+.breadcrumb {
+  display: flex;
+  gap: 0.65rem;
+  align-items: center;
+  padding-top: 2rem;
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.breadcrumb a {
+  text-underline-offset: 0.2em;
+}
+
+.object-hero {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: clamp(3rem, 8vw, 8rem);
+  align-items: end;
+  padding: 6rem 0 5rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.object-hero h1 {
+  margin: 0;
+  font-size: clamp(4rem, 8vw, 7.5rem);
+  letter-spacing: -0.055em;
+  line-height: 0.9;
+}
+
+.object-hero__summary > p {
+  margin: 0 0 2.5rem;
+  color: var(--muted);
+  font-family: var(--serif);
+  font-size: 1.35rem;
+}
+
+.object-facts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0;
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+
+.object-facts div {
+  padding: 1rem;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.object-facts dt,
+.spec-list dt {
+  color: var(--muted);
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.object-facts dd,
+.spec-list dd {
+  margin: 0.35rem 0 0;
+  font-family: var(--serif);
+  font-size: 1.05rem;
+}
+
+.coin-gallery,
+.plaster-section {
+  padding: 7rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.object-heading {
+  align-items: end;
+}
+
+.object-heading > p {
+  max-width: 30rem;
+  margin: 0;
+  color: var(--muted);
+}
+
+.coin-gallery__grid,
+.plaster-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.coin-figure,
+.plaster-grid figure,
+.artifact-callout figure {
+  margin: 0;
+}
+
+.coin-figure__image {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1;
+  padding: clamp(1rem, 4vw, 4rem);
+  background:
+    radial-gradient(circle, var(--white), var(--paper-deep) 68%, #d6ccbd);
+}
+
+.coin-figure__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.coin-figure figcaption {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.coin-figure figcaption span {
+  max-width: 24rem;
+  color: var(--muted);
+  font-size: 0.82rem;
+  text-align: right;
+}
+
+.image-credit {
+  margin: 1.25rem 0 0;
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-style: italic;
+}
+
+.object-section {
+  padding: 7rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.object-section--split,
+.spec-section,
+.source-section {
+  display: grid;
+  grid-template-columns: 0.75fr 1.25fr;
+  gap: clamp(3rem, 8vw, 8rem);
+}
+
+.object-section h2,
+.spec-section h2,
+.source-section h2,
+.artifact-callout h2 {
+  margin: 0;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+.object-copy p:first-child {
+  margin-top: 0;
+}
+
+.object-copy {
+  color: var(--muted);
+  font-family: var(--serif);
+  font-size: 1.1rem;
+}
+
+.plaster-grid img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  border: 1px solid var(--line);
+  object-fit: cover;
+}
+
+.plaster-grid figcaption {
+  padding-top: 0.8rem;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.artifact-callout {
+  display: grid;
+  grid-template-columns: minmax(15rem, 0.55fr) 1fr;
+  gap: clamp(3rem, 8vw, 7rem);
+  align-items: center;
+  padding: 6rem;
+  margin: 7rem 0;
+  background: var(--bronze-dark);
+  color: var(--white);
+}
+
+.artifact-callout img {
+  display: block;
+  width: 100%;
+  max-height: 35rem;
+  object-fit: contain;
+}
+
+.artifact-callout .eyebrow {
+  color: #d8c6ae;
+}
+
+.artifact-callout p:not(.eyebrow) {
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.spec-section,
+.source-section {
+  padding: 7rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.spec-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0;
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+
+.spec-list div {
+  padding: 1.25rem;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.source-list {
+  margin: 0;
+  padding-left: 1.25rem;
+  color: var(--muted);
+}
+
+.source-list li {
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+}
+
+.source-list a {
+  text-underline-offset: 0.2em;
+}
+
+.back-link {
+  margin: 0 0 7rem;
+}
+
 .site-footer {
   display: flex;
   justify-content: space-between;
@@ -530,7 +822,12 @@ blockquote {
   .hero,
   .statement,
   .page-hero,
-  .archive-note {
+  .archive-note,
+  .object-hero,
+  .object-section--split,
+  .spec-section,
+  .source-section,
+  .artifact-callout {
     grid-template-columns: 1fr;
   }
 
@@ -569,6 +866,10 @@ blockquote {
   .placeholder-grid {
     grid-template-columns: 1fr;
   }
+
+  .artifact-callout {
+    padding: 3rem;
+  }
 }
 
 @media (max-width: 38rem) {
@@ -598,7 +899,13 @@ blockquote {
   .statement,
   .section-index,
   .page-hero,
-  .biography-layout {
+  .biography-layout,
+  .object-hero,
+  .coin-gallery,
+  .plaster-section,
+  .object-section,
+  .spec-section,
+  .source-section {
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
@@ -615,6 +922,25 @@ blockquote {
     gap: 2rem;
     padding: 2rem;
     margin-bottom: 4rem;
+  }
+
+  .coin-gallery__grid,
+  .plaster-grid,
+  .spec-list {
+    grid-template-columns: 1fr;
+  }
+
+  .coin-figure figcaption {
+    flex-direction: column;
+  }
+
+  .coin-figure figcaption span {
+    text-align: left;
+  }
+
+  .artifact-callout {
+    padding: 2rem;
+    margin: 4rem 0;
   }
 
   .site-footer {
