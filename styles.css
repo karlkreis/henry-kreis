@@ -717,9 +717,9 @@ blockquote {
 .plaster-grid img {
   display: block;
   width: 100%;
-  aspect-ratio: 1;
+  height: auto;
   border: 1px solid var(--line);
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .plaster-grid figcaption {
