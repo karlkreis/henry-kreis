@@ -546,6 +546,11 @@ blockquote {
   margin-top: 1.25rem;
 }
 
+.collection-records {
+  display: grid;
+  gap: 0.65rem;
+}
+
 .breadcrumb {
   display: flex;
   gap: 0.65rem;
@@ -636,6 +641,10 @@ blockquote {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
+}
+
+.plaster-grid--single {
+  grid-template-columns: 1fr;
 }
 
 .coin-figure,
