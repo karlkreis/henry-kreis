@@ -19,29 +19,67 @@
         <section class="collection-intro"><p>This section will document obverse and reverse designs together, with issue history, inscriptions, dimensions, minting or casting details, and links to related awards and events.</p></section>
         <section class="placeholder-grid" aria-label="Numismatic groups">
           <article class="collection-group">
-            <div class="collection-group__image">
-              <img
-                src="images/issued-reverse-charter-oak-corrected-20260817.jpg"
-                alt="Reverse of the 1935 Connecticut Tercentenary Half Dollar, featuring the Charter Oak"
-                width="900"
-                height="900"
-              >
+            <div class="collection-group__image image-carousel" data-collection-carousel="half-dollars">
+              <a class="collection-carousel__link" href="connecticut-tercentenary-half-dollar.html" data-carousel-link aria-label="View 1935 Connecticut Tercentenary Half Dollar">
+                <img
+                  src="images/issued-obverse-eagle-corrected-20260817.jpg"
+                  alt="Obverse of the 1935 Connecticut Tercentenary Half Dollar, featuring an eagle"
+                  width="900"
+                  height="900"
+                  data-carousel-image
+                >
+                <span class="collection-carousel__label" data-carousel-label aria-live="polite">1935 Connecticut Tercentenary</span>
+              </a>
+              <button class="image-carousel__control image-carousel__control--previous" type="button" data-carousel-direction="-1" aria-label="Show previous commemorative half dollar">
+                <span aria-hidden="true">←</span>
+              </button>
+              <button class="image-carousel__control image-carousel__control--next" type="button" data-carousel-direction="1" aria-label="Show next commemorative half dollar">
+                <span aria-hidden="true">→</span>
+              </button>
             </div>
             <div>
-              <p class="eyebrow">01 · Two records available</p>
+              <p class="eyebrow">01 · Three records available</p>
               <h3>Commemorative half dollars</h3>
               <p>Connecticut, Bridgeport, and the Arkansas-Robinson issue.</p>
               <div class="collection-records">
                 <a class="text-link" href="connecticut-tercentenary-half-dollar.html">1935 Connecticut Tercentenary <span aria-hidden="true">→</span></a>
                 <a class="text-link" href="bridgeport-centennial-half-dollar.html">1936 Bridgeport Centennial <span aria-hidden="true">→</span></a>
+                <a class="text-link" href="robinson-arkansas-centennial-half-dollar.html">1936 Robinson-Arkansas Centennial <span aria-hidden="true">→</span></a>
               </div>
             </div>
           </article>
-          <article class="collection-placeholder">
-            <div class="collection-placeholder__image" aria-hidden="true"><span>02</span></div>
+          <article class="collection-group">
+            <div class="collection-group__image image-carousel" data-collection-carousel="medals">
+              <a class="collection-carousel__link" href="connecticut-tercentenary-medal.html" data-carousel-link aria-label="View 1935 Connecticut Tercentenary Medal">
+                <img
+                  src="images/1935-connecticut-tercentenary-medal-obverse.jpg"
+                  alt="Obverse of the 1935 Connecticut Tercentenary Medal"
+                  width="1200"
+                  height="1200"
+                  data-carousel-image
+                >
+                <span class="collection-carousel__label" data-carousel-label aria-live="polite">1935 Connecticut Tercentenary Medal</span>
+              </a>
+              <button class="image-carousel__control image-carousel__control--previous" type="button" data-carousel-direction="-1" aria-label="Show previous medal">
+                <span aria-hidden="true">←</span>
+              </button>
+              <button class="image-carousel__control image-carousel__control--next" type="button" data-carousel-direction="1" aria-label="Show next medal">
+                <span aria-hidden="true">→</span>
+              </button>
+            </div>
             <div>
+              <p class="eyebrow">02 · Seven records available</p>
               <h3>Medals</h3>
               <p>Society issues, institutional honors, exhibitions, and commemorative medals.</p>
+              <div class="collection-records">
+                <a class="text-link" href="connecticut-tercentenary-medal.html">1935 Connecticut Tercentenary Medal <span aria-hidden="true">→</span></a>
+                <a class="text-link" href="three-fates-medal.html">1938 The Three Fates Medal <span aria-hidden="true">→</span></a>
+                <a class="text-link" href="new-york-worlds-fair-dollar.html">1939 New York World's Fair “Dollar” <span aria-hidden="true">→</span></a>
+                <a class="text-link" href="national-sculpture-society-medal-of-honor.html">1940 National Sculpture Society Medal of Honor <span aria-hidden="true">→</span></a>
+                <a class="text-link" href="america-pin.html">1941 America Pin <span aria-hidden="true">→</span></a>
+                <a class="text-link" href="wise-and-foolish-virgins-medal.html">1947 Wise and Foolish Virgins Medal <span aria-hidden="true">→</span></a>
+                <a class="text-link" href="hartford-art-school-medal.html">1952 Hartford Art School Medal <span aria-hidden="true">→</span></a>
+              </div>
             </div>
           </article>
           <article class="collection-placeholder">
@@ -55,5 +93,88 @@
       </main>
       <footer class="site-footer"><p>A family archive dedicated to the life and work of Henry Kreis · 1899–1963</p><p>Research and collection documentation are ongoing. © 2026 Kreis family.</p></footer>
     </div>
+    <script>
+      const collectionCarouselViews = {
+        "half-dollars": [
+          {
+            src: "images/issued-obverse-eagle-corrected-20260817.jpg",
+            alt: "Obverse of the 1935 Connecticut Tercentenary Half Dollar, featuring an eagle",
+            href: "connecticut-tercentenary-half-dollar.html",
+            label: "1935 Connecticut Tercentenary"
+          },
+          {
+            src: "images/1936-bridgeport-half-dollar-obverse-barnum.jpg",
+            alt: "Obverse of the 1936 Bridgeport Centennial Half Dollar, featuring P. T. Barnum",
+            href: "bridgeport-centennial-half-dollar.html",
+            label: "1936 Bridgeport Centennial"
+          }
+        ],
+        medals: [
+          {
+            src: "images/1935-connecticut-tercentenary-medal-obverse.jpg",
+            alt: "Obverse of the 1935 Connecticut Tercentenary Medal",
+            href: "connecticut-tercentenary-medal.html",
+            label: "1935 Connecticut Tercentenary Medal"
+          },
+          {
+            src: "images/1938-three-fates-medal-obverse.jpg",
+            alt: "Obverse of Henry Kreis's 1938 Three Fates Medal",
+            href: "three-fates-medal.html",
+            label: "1938 The Three Fates Medal"
+          },
+          {
+            src: "images/1939-new-york-worlds-fair-dollar-obverse.jpg",
+            alt: "Obverse of the 1939 New York World's Fair Dollar",
+            href: "new-york-worlds-fair-dollar.html",
+            label: "1939 New York World's Fair “Dollar”"
+          },
+          {
+            src: "images/1940-national-sculpture-society-medal-of-honor-obverse-isolated.png",
+            alt: "Obverse of the 1940 National Sculpture Society Medal of Honor",
+            href: "national-sculpture-society-medal-of-honor.html",
+            label: "1940 National Sculpture Society Medal of Honor"
+          },
+          {
+            src: "images/1941-america-pin-silver-obverse.jpg",
+            alt: "Silver obverse of Henry Kreis's 1941 America Pin",
+            href: "america-pin.html",
+            label: "1941 America Pin"
+          },
+          {
+            src: "images/1947-wise-foolish-virgins-silver-obverse-full.jpg",
+            alt: "Silver obverse of Henry Kreis's 1947 Wise and Foolish Virgins Medal",
+            href: "wise-and-foolish-virgins-medal.html",
+            label: "1947 Wise and Foolish Virgins Medal"
+          },
+          {
+            src: "images/1952-hartford-art-school-gold-plated-obverse.jpg",
+            alt: "Gold-plated obverse of Henry Kreis's 1952 Hartford Art School Medal",
+            href: "hartford-art-school-medal.html",
+            label: "1952 Hartford Art School Medal"
+          }
+        ]
+      };
+
+      document.querySelectorAll("[data-collection-carousel]").forEach((carousel) => {
+        const views = collectionCarouselViews[carousel.dataset.collectionCarousel];
+        const image = carousel.querySelector("[data-carousel-image]");
+        const link = carousel.querySelector("[data-carousel-link]");
+        const label = carousel.querySelector("[data-carousel-label]");
+        let currentView = 0;
+
+        carousel.querySelectorAll("[data-carousel-direction]").forEach((button) => {
+          button.addEventListener("click", () => {
+            const direction = Number(button.dataset.carouselDirection);
+            currentView = (currentView + direction + views.length) % views.length;
+            const view = views[currentView];
+            image.src = view.src;
+            image.alt = view.alt;
+            link.href = view.href;
+            link.setAttribute("aria-label", `View ${view.label}`);
+            label.textContent = view.label;
+          });
+        });
+      });
+    </script>
   </body>
 </html>

@@ -668,6 +668,94 @@ blockquote {
   object-fit: contain;
 }
 
+.image-carousel {
+  position: relative;
+}
+
+.image-carousel__control {
+  position: absolute;
+  top: 50%;
+  z-index: 3;
+  display: grid;
+  width: 2.75rem;
+  height: 2.75rem;
+  place-items: center;
+  padding: 0;
+  border: 1px solid rgba(31, 30, 27, 0.28);
+  border-radius: 50%;
+  background: rgba(247, 243, 236, 0.9);
+  color: var(--ink);
+  cursor: pointer;
+  font: inherit;
+  font-size: 1.15rem;
+  transform: translateY(-50%);
+}
+
+.image-carousel__control:hover,
+.image-carousel__control:focus-visible {
+  background: var(--white);
+  border-color: var(--ink);
+}
+
+.image-carousel__control--previous {
+  left: 1rem;
+}
+
+.image-carousel__control--next {
+  right: 1rem;
+}
+
+.collection-carousel__link {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  place-items: center;
+  color: inherit;
+  text-decoration: none;
+}
+
+.collection-carousel__link:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 0.35rem;
+}
+
+.collection-carousel__label {
+  position: absolute;
+  z-index: 2;
+  right: 4.5rem;
+  bottom: 1rem;
+  left: 4.5rem;
+  padding: 0.65rem 0.8rem;
+  background: rgba(247, 243, 236, 0.92);
+  color: var(--ink);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.coin-figure__image--placeholder {
+  align-content: center;
+  gap: 0.75rem;
+  border: 1px dashed var(--line);
+  color: var(--muted);
+  text-align: center;
+}
+
+.coin-figure__image--placeholder span,
+.coin-figure__image--placeholder small {
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.coin-figure__image--placeholder strong {
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
+}
+
 .coin-figure figcaption {
   display: flex;
   gap: 1rem;
@@ -879,6 +967,7 @@ blockquote {
   .artifact-callout {
     padding: 3rem;
   }
+
 }
 
 @media (max-width: 38rem) {
