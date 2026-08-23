@@ -709,9 +709,17 @@ blockquote {
   display: grid;
   width: 100%;
   height: 100%;
+  align-content: start;
   place-items: center;
   color: inherit;
   text-decoration: none;
+}
+
+.collection-carousel__link img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: contain;
 }
 
 .collection-carousel__link:focus-visible {
