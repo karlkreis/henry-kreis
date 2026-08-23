@@ -458,6 +458,39 @@ blockquote {
   text-underline-offset: 0.18em;
 }
 
+.biography-medal-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.biography-medal-grid figure {
+  margin: 0;
+}
+
+.biography-medal-grid img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+}
+
+.biography-medal-grid figcaption,
+.biography-image-credit {
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 0.75rem;
+}
+
+.biography-medal-grid figcaption {
+  padding-top: 0.65rem;
+}
+
+.biography-image-credit {
+  margin-top: 0.5rem;
+}
+
 .collection-intro {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1032,6 +1065,7 @@ blockquote {
 
   .coin-gallery__grid,
   .plaster-grid,
+  .biography-medal-grid,
   .spec-list {
     grid-template-columns: 1fr;
   }
