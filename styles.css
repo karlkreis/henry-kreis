@@ -491,6 +491,30 @@ blockquote {
   margin-top: 0.5rem;
 }
 
+.biography-photo-grid {
+  display: grid;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.biography-photo-grid figure {
+  margin: 0;
+}
+
+.biography-photo-grid img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+}
+
+.biography-photo-grid figcaption {
+  padding-top: 0.65rem;
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 0.75rem;
+}
+
 .collection-intro {
   display: grid;
   grid-template-columns: 1fr 1fr;
